@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: Poppins, sans-serif;
+
 }
 
 body{
@@ -14,7 +15,9 @@ body{
     overflow-x:hidden;
     overflow-y:auto;
     transition:1s;
-    background:#111;
+    /* background:#111;
+     */
+    color:white;
 }
 
 .overlay {
@@ -228,7 +231,6 @@ h2 {
     }
 
     #location{
-
         font-size:28px;
     }
 
