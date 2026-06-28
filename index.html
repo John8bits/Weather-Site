@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather </title>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body class="clear">
+
+    <div class="overlay"></div>
+
+    <div class="container">
+
+        <h1>🌦 WeatherX</h1>
+
+        <div class="search-box">
+            <input type="text" id="city" placeholder="Enter province,city,municipality">
+            <button onclick="getWeather()">Search</button>
+        </div>
+
+        <div class="datetime">
+            <p id="currentDate"></p>
+            <p id="currentTime"></p>
+        </div>
+
+        <div class="weather-card">
+
+            <h2 id="location">Province|City| Municipality</h2>
+
+            <!-- <img id="icon" alt="Weather icon"> --><img id="icon">
+
+            <h1 id="temp">--°C</h1>
+
+            <h3 id="condition">Weather</h3>
+
+            <div class="details">
+
+                <div>
+                    <p id="humidity">0%</p>
+                    <span>Humidity</span>
+                </div>
+
+                <div>
+                    <p id="wind">0 km/h</p>
+                    <span>Wind</span>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <footer>
+        <p style="color:white; position:absolute; bottom:0; right: 4px; color:gainsboro; font-size: 14px;">&copy; JBitss
+        </p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
